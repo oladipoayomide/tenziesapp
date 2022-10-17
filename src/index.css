@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 360px;
+  height: 379px;
+  background-color: #0B2434;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+
+.content {
+  width: 320px;
+  height: 320px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
+
+
+
+
+}
+
+.each-dice {
+
+
+  box-shadow: #0b24341d 1px 1px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: white;
+  border-radius: 7px;
+  cursor: pointer;
+
+}
+.each-dice:focus{
+  outline: none;
+}
+
+.roll {
+  background-color: #5035FF;
+  min-width: 110px;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 3.2px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  
+
+}
+
+input[type="text"]{
+  background-color: white;
+  padding: 5px 10px;
+  width: 100%;
+  margin: 20px 0 10px;
+  border: #5035FF solid 2px;
+  border-radius: 5px;
+  outline-color: #5035FF;
+ 
+}
+
+
+.roll:active {
+  box-shadow: inset -5px -5px 10px -5px  #000000c8 ;
+}
+
+ button{
+  outline: none;
+ }
+
+
+.dices {
+
+  display: grid;
+  grid-template-columns: repeat(5, 36px);
+  grid-template-rows: 36px 36px;
+  gap: 15px;
+  padding: 20px 20px;
+  
+
+
+}
+.footer{
+  margin-top: 10px;
+  color: #0b24347d;
+  font-size: small;
+  text-align: center;
+}
+.timer{
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+  background-color: #0B2434;
+  box-shadow: inset -5px 10px 10px -5px  #000000c8;
+  
+  
+  padding: 10px;
+  text-shadow: #f5f5f5 0px 0px 3px;
+}
+.scores {
+  text-shadow: #f5f5f5 0px 0px 2px;
+  box-shadow: inset -5px -10px 10px -5px  #000000c8;
+}
+.text-shadow {
+  filter:drop-shadow(#f5f5f5 0px 0px 2px)
+}
